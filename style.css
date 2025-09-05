@@ -1,31 +1,13 @@
-/* Base styles */
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
   color: #333;
-  transition: background-color 0.3s ease;
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-
-button {
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Language toggle */
 .language-toggle {
   text-align: right;
   padding: 1rem 2rem;
-  background-color: #fff;
 }
 
 .language-toggle button {
@@ -35,26 +17,19 @@ button {
   background-color: #2980b9;
   color: white;
   cursor: pointer;
-  border-radius: 4px;
 }
 
-.language-toggle button:hover {
-  background-color: #1c598f;
-}
-
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background-color: #fff;
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  flex-wrap: wrap;
 }
 
 .logo {
-  font-weight: 800;
+  font-weight: bold;
   font-size: 1.5rem;
   color: #2c3e50;
 }
@@ -63,28 +38,12 @@ button {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap;
 }
 
 .nav-links a {
-  font-weight: 500;
+  text-decoration: none;
   color: #2c3e50;
-  position: relative;
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #27ae60;
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
+  font-weight: 500;
 }
 
 .donate-btn {
@@ -94,32 +53,19 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 4px;
 }
 
-.donate-btn:hover {
-  background-color: #1e874c;
-  transform: scale(1.05);
-}
-
-/* Hero section */
 .hero {
-  background: linear-gradient(to right, #e3f2fd, #fff);
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.hero-overlay {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 3rem 2rem;
+  background: #f0f4f8;
   flex-wrap: wrap;
-  gap: 2rem;
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 280px;
+  max-width: 50%;
 }
 
 .hero-text h1 {
@@ -139,22 +85,14 @@ button {
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 4px;
 }
 
-.cta-btn:hover {
-  background-color: #1c598f;
-  transform: scale(1.05);
-}
-
-/* Donation form */
 .donation-form {
   background-color: white;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  flex: 1;
-  min-width: 280px;
+  max-width: 35%;
 }
 
 .donation-form h2 {
@@ -173,16 +111,10 @@ button {
   border: 1px solid #27ae60;
   background-color: white;
   cursor: pointer;
-  border-radius: 4px;
 }
 
 .donation-type.active {
   background-color: #27ae60;
-  color: white;
-}
-
-.donation-type:hover {
-  background-color: #1e874c;
   color: white;
 }
 
@@ -192,7 +124,6 @@ button {
   font-size: 1rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
 .continue-btn {
@@ -203,15 +134,8 @@ button {
   font-weight: bold;
   cursor: pointer;
   width: 100%;
-  border-radius: 4px;
 }
 
-.continue-btn:hover {
-  background-color: #1e874c;
-  transform: scale(1.03);
-}
-
-/* Gallery */
 .gallery {
   padding: 2rem;
   background-color: #fff;
@@ -224,7 +148,7 @@ button {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -232,77 +156,11 @@ button {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
 }
 
-.gallery-grid img:hover {
-  transform: scale(1.05);
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #fff;
   margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .hero-overlay {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-
-  .donate-btn {
-    margin-top: 1rem;
-  }
-}
-.menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #2c3e50;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #fff;
-    margin-top: 1rem;
-    padding: 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin-bottom: 0.5rem;
-  }
-
-  .donate-btn {
-    margin-top: 1rem;
-  }
 }
