@@ -26,3 +26,7 @@ function setLanguage(lang) {
   document.querySelector(".hero-text p").textContent = content[lang].subtext;
   document.querySelector(".donation-form p:nth-of-type(2)").textContent = content[lang].mission;
 }
+function toggleMenu() {
+  const navMenu = document.getElementById("navMenu");
+  navMenu.classList.toggle("show");
+}
