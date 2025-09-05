@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Haymimovement.org</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
   <div class="language-toggle">
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('am')">አማርኛ</button>
+    <button id="lang-en" onclick="setLanguage('en')">English</button>
+    <button id="lang-am" onclick="setLanguage('am')">አማርኛ</button>
   </div>
 
   <nav class="navbar">
@@ -25,21 +26,23 @@
   </nav>
 
   <header class="hero">
-    <div class="hero-text">
-      <h1>We’re changing the world.</h1>
-      <p>No matter the industry, we’re breaking down barriers that hold women back.</p>
-      <button class="cta-btn">JOIN TODAY</button>
-    </div>
-    <div class="donation-form">
-      <h2>Pandemic toll on women who work</h2>
-      <p>20 million more women may never return to work.</p>
-      <p>Haymimovement.org is ready to keep girls learning during and after the crisis.</p>
-      <div class="donation-options">
-        <button class="donation-type active">ONE TIME</button>
-        <button class="donation-type">MONTHLY</button>
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h1 id="headline">We’re changing the world.</h1>
+        <p id="subtext">No matter the industry, we’re breaking down barriers that hold women back.</p>
+        <button class="cta-btn">JOIN TODAY</button>
       </div>
-      <input type="text" placeholder="$10" class="donation-amount" />
-      <button class="continue-btn">CONTINUE</button>
+      <div class="donation-form">
+        <h2>Pandemic toll on women who work</h2>
+        <p>20 million more women may never return to work.</p>
+        <p id="mission">Haymimovement.org is ready to keep girls learning during and after the crisis.</p>
+        <div class="donation-options">
+          <button class="donation-type active">ONE TIME</button>
+          <button class="donation-type">MONTHLY</button>
+        </div>
+        <input type="text" placeholder="$10" class="donation-amount" />
+        <button class="continue-btn">CONTINUE</button>
+      </div>
     </div>
   </header>
 
@@ -59,3 +62,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
