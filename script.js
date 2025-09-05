@@ -30,3 +30,7 @@ function toggleMenu() {
   const navMenu = document.getElementById("navMenu");
   navMenu.classList.toggle("show");
 }
+function toggleMenu() {
+  const navMenu = document.getElementById("navMenu");
+  navMenu.classList.toggle("show");
+}
