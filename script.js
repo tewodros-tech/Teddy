@@ -1,3 +1,4 @@
+// ✅ Donation type selector
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".donation-type");
   buttons.forEach(btn => {
@@ -8,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+/**
+ * 🌍 Language toggle function
+ */
 function setLanguage(lang) {
   const content = {
     en: {
