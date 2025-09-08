@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic page setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title and description for SEO -->
   <title>Hi-Me Movement | Empowering Families & Individuals in Need</title>
   <meta name="description" content="Hi-Me Movement: Empowering displaced families and individuals with disabilities through love, food, education, and medical support." />
+
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Inline CSS for layout and styling -->
   <style>
+    /* Base styles for body */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f6fa;
-      color: #333;
+      background: #f5f6fa; /* Soft neutral background */
+      color: #333; /* Readable text color */
     }
 
+    /* Header section with brand color and mission */
     header {
-      background: #006494;
+      background: #006494; /* Primary brand color */
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -29,11 +38,12 @@
     header p {
       margin-top: 10px;
       font-size: 1.2em;
-      font-style: italic;
+      font-style: italic; /* Adds emotional tone */
     }
 
+    /* Navigation bar styling */
     nav {
-      background: #004d73;
+      background: #004d73; /* Slightly darker than header */
       padding: 10px;
       text-align: center;
     }
@@ -46,15 +56,17 @@
     }
 
     nav a:hover {
-      text-decoration: underline;
+      text-decoration: underline; /* Simple hover effect */
     }
 
+    /* Main content container */
     main {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
 
+    /* Welcome section */
     .welcome {
       margin-bottom: 40px;
       text-align: center;
@@ -70,27 +82,29 @@
       line-height: 1.6;
     }
 
+    /* Highlights grid layout */
     .highlights {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 20px; /* Space between cards */
     }
 
+    /* Individual program cards */
     .highlight-card {
       background: white;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Soft shadow */
       padding: 20px;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease; /* Hover animation */
     }
 
     .highlight-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-5px); /* Lift effect */
     }
 
     .highlight-card i {
       font-size: 2em;
-      color: #006494;
+      color: #006494; /* Icon color matches brand */
       margin-bottom: 10px;
     }
 
@@ -99,6 +113,7 @@
       margin: 10px 0;
     }
 
+    /* Call-to-action section */
     .cta {
       text-align: center;
       margin: 40px 0;
@@ -115,9 +130,10 @@
     }
 
     .cta a:hover {
-      background: #004d73;
+      background: #004d73; /* Darker hover effect */
     }
 
+    /* Footer styling */
     footer {
       background: #003f5c;
       color: white;
@@ -126,6 +142,7 @@
       margin-top: 40px;
     }
 
+    /* Responsive tweaks for mobile */
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.8em;
@@ -138,18 +155,22 @@
 </head>
 <body>
 
+  <!-- Branding and mission statement -->
   <header>
     <h1>Hi-Me Movement</h1>
     <p>Spreading Love and Hope to Families in Need: Empowering Internally Displaced People and Individuals with Disabilities.</p>
   </header>
 
+  <!-- Navigation links -->
   <nav>
     <a href="#welcome">Home</a>
     <a href="#highlights">Programs</a>
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- Main content area -->
   <main>
+    <!-- Welcome message section -->
     <section id="welcome" class="welcome">
       <h2>Welcome Message</h2>
       <p>
@@ -159,25 +180,30 @@
       </p>
     </section>
 
+    <!-- Program highlights section -->
     <section id="highlights" class="highlights">
+      <!-- Card 1: Food aid -->
       <div class="highlight-card">
         <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
         <h3>Emergency Food Distribution</h3>
         <p>Delivering food packages to families facing food insecurity during crises and displacement.</p>
       </div>
 
+      <!-- Card 2: Education -->
       <div class="highlight-card">
         <i class="fas fa-book-reader" aria-hidden="true"></i>
         <h3>Educational Support for Children</h3>
         <p>Providing school supplies, tuition support, and mentorship to displaced and vulnerable children.</p>
       </div>
 
+      <!-- Card 3: Medical aid -->
       <div class="highlight-card">
         <i class="fas fa-pills" aria-hidden="true"></i>
         <h3>Access to Life-saving Medication</h3>
         <p>Ensuring critical medical support and access to medication for those in need.</p>
       </div>
 
+      <!-- Card 4: Disability support -->
       <div class="highlight-card">
         <i class="fas fa-wheelchair" aria-hidden="true"></i>
         <h3>Aid for Internally Displaced and Disabled Communities</h3>
@@ -185,11 +211,13 @@
       </div>
     </section>
 
+    <!-- Call-to-action button -->
     <section class="cta">
-      <a href="donate.html">Donate Now</a>
+      <a href="donate.html">Donate Now</a> <!-- Link to donation page -->
     </section>
   </main>
 
+  <!-- Footer with contact info -->
   <footer id="contact">
     <p>&copy; 2025 Hi-Me Movement. All Rights Reserved.</p>
   </footer>
