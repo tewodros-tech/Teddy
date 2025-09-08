@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hi-Me Movement</title>
+  <title>Hi-Me Movement | Empowering Families & Individuals in Need</title>
+  <meta name="description" content="Hi-Me Movement: Empowering displaced families and individuals with disabilities through love, food, education, and medical support." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
@@ -29,6 +30,23 @@
       margin-top: 10px;
       font-size: 1.2em;
       font-style: italic;
+    }
+
+    nav {
+      background: #004d73;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     main {
@@ -81,12 +99,40 @@
       margin: 10px 0;
     }
 
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cta a {
+      background: #006494;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #004d73;
+    }
+
     footer {
       background: #003f5c;
       color: white;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      .welcome h2 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
@@ -97,8 +143,14 @@
     <p>Spreading Love and Hope to Families in Need: Empowering Internally Displaced People and Individuals with Disabilities.</p>
   </header>
 
+  <nav>
+    <a href="#welcome">Home</a>
+    <a href="#highlights">Programs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main>
-    <section class="welcome">
+    <section id="welcome" class="welcome">
       <h2>Welcome Message</h2>
       <p>
         We are the Hi-Me Movement — a community-driven initiative bringing hope, resources, and compassion to families 
@@ -107,34 +159,38 @@
       </p>
     </section>
 
-    <section class="highlights">
+    <section id="highlights" class="highlights">
       <div class="highlight-card">
-        <i class="fas fa-hand-holding-heart"></i>
+        <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
         <h3>Emergency Food Distribution</h3>
         <p>Delivering food packages to families facing food insecurity during crises and displacement.</p>
       </div>
 
       <div class="highlight-card">
-        <i class="fas fa-book-reader"></i>
+        <i class="fas fa-book-reader" aria-hidden="true"></i>
         <h3>Educational Support for Children</h3>
         <p>Providing school supplies, tuition support, and mentorship to displaced and vulnerable children.</p>
       </div>
 
       <div class="highlight-card">
-        <i class="fas fa-pills"></i>
+        <i class="fas fa-pills" aria-hidden="true"></i>
         <h3>Access to Life-saving Medication</h3>
         <p>Ensuring critical medical support and access to medication for those in need.</p>
       </div>
 
       <div class="highlight-card">
-        <i class="fas fa-wheelchair"></i>
+        <i class="fas fa-wheelchair" aria-hidden="true"></i>
         <h3>Aid for Internally Displaced and Disabled Communities</h3>
         <p>Delivering targeted aid, mobility devices, and support services to uplift the most vulnerable.</p>
       </div>
     </section>
+
+    <section class="cta">
+      <a href="donate.html">Donate Now</a>
+    </section>
   </main>
 
-  <footer>
+  <footer id="contact">
     <p>&copy; 2025 Hi-Me Movement. All Rights Reserved.</p>
   </footer>
 
