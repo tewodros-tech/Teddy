@@ -1,277 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ✅ Basic page setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ✅ SEO and branding -->
-  <title>Donate | Hi-Me Movement</title>
-  <meta name="description" content="Support Hi-Me Movement by donating to help displaced families, children, and individuals with disabilities." />
-
-  <!-- ✅ Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- ✅ Inline CSS for layout and styling -->
-  <style>
-    /* 🌐 Base styles */
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f6fa;
-      color: #333;
-    }
-
-    /* 🎨 Header styling */
-    header {
-      background: #006494;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
-    }
-
-    /* 🧭 Navigation bar */
-    nav {
-      background: #004d73;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* 📦 Main content container */
-    main {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    /* 💬 Intro message */
-    .donate-intro {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    /* 🧱 Donation categories grid */
-    .donate-options {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-      margin-bottom: 40px;
-    }
-
-    /* 🧾 Individual donation cards */
-    .option-card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-
-    .option-card:hover {
-      transform: translateY(-5px); /* Hover animation */
-    }
-
-    .option-card i {
-      font-size: 2em;
-      color: #006494;
-      margin-bottom: 10px;
-    }
-
-    .option-card h3 {
-      margin: 10px 0;
-    }
-
-    /* 📝 Donation form container */
-    .donate-form {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .donate-form h2 {
-      margin-top: 0;
-      text-align: center;
-    }
-
-    /* 📋 Form fields */
-    .donate-form label {
-      display: block;
-      margin: 15px 0 5px;
-    }
-
-    .donate-form input,
-    .donate-form select {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    /* 🚀 Submit button */
-    .donate-form button {
-      background: #006494;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      width: 100%;
-      margin-top: 20px;
-      font-size: 1.1em;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .donate-form button:hover {
-      background: #004d73;
-    }
-
-    /* 📞 Footer styling */
-    footer {
-      background: #003f5c;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+  <title>Hi-Me Movement | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- 🧡 Header with mission -->
-  <header>
-    <h1>Support the Hi-Me Movement</h1>
-    <p>Your generosity helps us feed families, educate children, and support individuals with disabilities.</p>
-  </header>
+  <!-- 🌍 Language toggle -->
+  <div class="language-toggle">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('am')">አማ</button>
+  </div>
 
   <!-- 🧭 Navigation bar -->
-  <nav>
-    <!-- ✅ Make sure this link matches the deployed filename exactly -->
-    <a href="index.html">Home</a>
-    <a href="donate.html">Donate</a>
-    <a href="#contact">Contact</a>
+  <nav class="navbar">
+    <div class="logo">Hi-Me Movement</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="donate.html">Donate</a></li> <!-- ✅ Link matches filename -->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="donate-btn" onclick="location.href='donate.html'">Donate Now</button>
   </nav>
 
-  <!-- 📦 Main content -->
-  <main>
-    <!-- 💬 Intro message -->
-    <section class="donate-intro">
-      <h2>Choose How You Want to Help</h2>
-      <p>Every contribution makes a difference — whether it’s food, education, medicine, or mobility aid. 
-         Together, we can uplift lives.</p>
-    </section>
-
-    <!-- 🧱 Donation categories -->
-    <section class="donate-options">
-      <div class="option-card">
-        <i class="fas fa-bread-slice"></i>
-        <h3>Food Aid</h3>
-        <p>Provide emergency food packages to families in need.</p>
+  <!-- 💬 Hero section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>We’re changing the world.</h1>
+      <p>No matter the industry, we’re breaking down barriers that hold women back.</p>
+    </div>
+    <div class="donation-form">
+      <h2>Quick Support</h2>
+      <p>Select a donation type and amount to make an impact.</p>
+      <p>Haymimovement.org is ready to keep girls learning during and after the crisis.</p>
+      <div class="donation-options">
+        <button class="donation-type">Food</button>
+        <button class="donation-type">Education</button>
+        <button class="donation-type">Medical</button>
+        <button class="donation-type">Disability</button>
       </div>
-      <div class="option-card">
-        <i class="fas fa-graduation-cap"></i>
-        <h3>Education</h3>
-        <p>Support children with school fees, supplies, and mentorship.</p>
-      </div>
-      <div class="option-card">
-        <i class="fas fa-first-aid"></i>
-        <h3>Medical Help</h3>
-        <p>Ensure access to life-saving medicine and healthcare.</p>
-      </div>
-      <div class="option-card">
-        <i class="fas fa-wheelchair"></i>
-        <h3>Disability Aid</h3>
-        <p>Provide mobility devices and support services to the vulnerable.</p>
-      </div>
-    </section>
+      <input type="number" class="donation-amount" placeholder="Enter amount (USD)" />
+      <button class="continue-btn" onclick="location.href='donate.html'">Continue to Donate</button>
+    </div>
+  </section>
 
-    <!-- 📝 Donation form -->
-    <section class="donate-form">
-      <h2>Make a Donation</h2>
-      <form id="donationForm">
-        <!-- 💰 Donation amount -->
-        <label for="amount">Donation Amount (USD)</label>
-        <input type="number" id="amount" name="amount" placeholder="Enter amount" required />
-
-        <!-- 🎯 Cause selection -->
-        <label for="cause">Choose a Cause</label>
-        <select id="cause" name="cause" required>
-          <option value="">-- Select an option --</option>
-          <option value="food">Food Aid</option>
-          <option value="education">Education</option>
-          <option value="medical">Medical Help</option>
-          <option value="disability">Disability Aid</option>
-          <option value="general">General Support</option>
-        </select>
-
-        <!-- 🙋 Donor name -->
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Full name" required />
-
-        <!-- 📧 Donor email -->
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Email address" required />
-
-        <!-- 🚀 Submit button -->
-        <button type="submit">Donate Now</button>
-      </form>
-    </section>
-  </main>
+  <!-- 🖼️ Gallery section -->
+  <section class="gallery">
+    <h2>Our Impact</h2>
+    <div class="gallery-grid">
+      <img src="img1.jpg" alt="Food distribution" />
+      <img src="img2.jpg" alt="Education support" />
+      <img src="img3.jpg" alt="Medical aid" />
+    </div>
+  </section>
 
   <!-- 📞 Footer -->
   <footer id="contact">
     <p>&copy; 2025 Hi-Me Movement. All Rights Reserved.</p>
   </footer>
 
-  <!-- 🧠 JavaScript for form handling -->
-  <script>
-    document.getElementById("donationForm").addEventListener("submit", function (e) {
-      e.preventDefault(); // Prevent page reload
-
-      // ✅ Collect form data
-      const amount = document.getElementById("amount").value;
-      const cause = document.getElementById("cause").value;
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-
-      // ✅ Basic validation
-      if (!amount || !cause || !name || !email) {
-        alert("Please fill out all fields.");
-        return;
-      }
-
-      // ✅ Simulate submission (replace with real API or service)
-      console.log("Donation submitted:", {
-        amount,
-        cause,
-        name,
-        email
-      });
-
-      // ✅ Show success message
-      alert("Thank you for your generous donation, " + name + "!");
-
-      // ✅ Reset form
-      this.reset();
-    });
-  </script>
-
+  <!-- 🧠 Script for interactivity -->
+  <script src="scripts.js"></script>
 </body>
 </html>
