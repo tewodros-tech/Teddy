@@ -3,59 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haymimovement.org</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Hi-Me Movement</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background: #006494;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .welcome {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .welcome h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .welcome p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .highlight-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .highlight-card i {
+      font-size: 2em;
+      color: #006494;
+      margin-bottom: 10px;
+    }
+
+    .highlight-card h3 {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #003f5c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <div class="language-toggle">
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('am')">አማርኛ</button>
-  </div>
 
-  <nav class="navbar">
-    <div class="logo">Haymimovement.org</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Pages</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <button class="donate-btn">DONATE</button>
-  </nav>
-
-  <header class="hero">
-    <div class="hero-text">
-      <h1>We’re changing the world.</h1>
-      <p>No matter the industry, we’re breaking down barriers that hold women back.</p>
-      <button class="cta-btn">JOIN TODAY</button>
-    </div>
-    <div class="donation-form">
-      <h2>Pandemic toll on women who work</h2>
-      <p>20 million more women may never return to work.</p>
-      <p>Haymimovement.org is ready to keep girls learning during and after the crisis.</p>
-      <div class="donation-options">
-        <button class="donation-type active">ONE TIME</button>
-        <button class="donation-type">MONTHLY</button>
-      </div>
-      <input type="text" placeholder="$10" class="donation-amount" />
-      <button class="continue-btn">CONTINUE</button>
-    </div>
+  <header>
+    <h1>Hi-Me Movement</h1>
+    <p>Spreading Love and Hope to Families in Need: Empowering Internally Displaced People and Individuals with Disabilities.</p>
   </header>
 
-  <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/photo1.jpg" alt="Event 1" />
-      <img src="images/photo2.jpg" alt="Workshop" />
-      <img src="images/photo3.jpg" alt="Community" />
-    </div>
-  </section>
+  <main>
+    <section class="welcome">
+      <h2>Welcome Message</h2>
+      <p>
+        We are the Hi-Me Movement — a community-driven initiative bringing hope, resources, and compassion to families 
+        impacted by conflict, displacement, poverty, and disability. From Ethiopia to North America and beyond, we unite people 
+        from all walks of life to uplift one another through acts of love and service.
+      </p>
+    </section>
+
+    <section class="highlights">
+      <div class="highlight-card">
+        <i class="fas fa-hand-holding-heart"></i>
+        <h3>Emergency Food Distribution</h3>
+        <p>Delivering food packages to families facing food insecurity during crises and displacement.</p>
+      </div>
+
+      <div class="highlight-card">
+        <i class="fas fa-book-reader"></i>
+        <h3>Educational Support for Children</h3>
+        <p>Providing school supplies, tuition support, and mentorship to displaced and vulnerable children.</p>
+      </div>
+
+      <div class="highlight-card">
+        <i class="fas fa-pills"></i>
+        <h3>Access to Life-saving Medication</h3>
+        <p>Ensuring critical medical support and access to medication for those in need.</p>
+      </div>
+
+      <div class="highlight-card">
+        <i class="fas fa-wheelchair"></i>
+        <h3>Aid for Internally Displaced and Disabled Communities</h3>
+        <p>Delivering targeted aid, mobility devices, and support services to uplift the most vulnerable.</p>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Haymimovement.org. All rights reserved.</p>
+    <p>&copy; 2025 Hi-Me Movement. All Rights Reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
